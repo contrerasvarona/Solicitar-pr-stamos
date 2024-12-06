@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4.2. Interés compuesto | Matemática Financiera </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Equipo rea 3º Eso de Matemáticas" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+ extensions: ["tex2jax.js"],
+ jax: ["input/TeX", "output/HTML-CSS"],
+ tex2jax: {
+ inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+ displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+ processEscapes: true
+ },
+ "HTML-CSS": { fonts: ["TeX"] },
+ TeX: { equationNumbers: { autoNumber: "AMS" } },
+ loader: {load: ['[tex]/cancel']},
+ tex: {packages: {'[+]': ['cancel']}}
+  });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default"></script>
+
+
+<style>
+.facilitada {
+  font-size: 14pt;
+  line-height: 1.5;
+}
+.facilitada ul {
+   line-height: 2.5;
+ 
+}
+ 
+.facilitada ol {
+   line-height: 2.5;
+ 
+}
+ 
+</style></head>
+<body class="exe-web-site" id="exe-node-259"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Matemática Financiera</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Matemática Financiera</a></li>
+   <li><a href="1_ahorrar_o_pedir_un_prstamo.html" class="no-ch">1. ¿Ahorrar o pedir un préstamo?</a></li>
+   <li><a href="2_cunto_dinero_tengo.html" class="no-ch">2. ¿Cuánto dinero tengo?</a></li>
+   <li><a href="3_cunto_necesito.html" class="no-ch">3. ¿Cuánto necesito?</a></li>
+   <li class="current-page-parent"><a href="4_esos_prstamos.html" class="current-page-parent daddy">4. Esos préstamos</a>
+   <ul>
+      <li><a href="41_inters_simple.html" class="no-ch">4.1. Interés simple</a></li>
+      <li id="active"><a href="42_inters_compuesto.html" class="active no-ch">4.2. Interés compuesto</a></li>
+      <li><a href="43_necesito_pasta.html" class="no-ch">4.3. Necesito pasta</a></li>
+   </ul>
+   </li>
+   <li><a href="5_solicito_un_prstamo.html" class="no-ch">5. Solicito un préstamo</a></li>
+   <li><a href="6_un_podcast_financiero.html" class="no-ch">6. Un podcast financiero</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="41_inters_simple.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>7</strong> de <strong>11</strong></span> <span class="sep">| </span><a href="43_necesito_pasta.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4.2. Interés compuesto</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id833">
+<div class="iDevice emphasis0" >
+<div id="ta833_1126_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Diccionario</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Capital</h2>
+<p><img src="capital.png" alt="Capital" title="Capital" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Recursos y bienes.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>El capital de la familia crece.</p>
+</dd>
+</dl>
+<h2>Reinvertir</h2>
+<p><img src="reinvertir.png" alt="Reinvertir" title="Reinvertir" style="float: left; margin-right: 10px; margin-left: 10px;" width="125" height="125"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Aplicar los beneficios de una actividad productiva al aumento de su capital (dinero).</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Hemos reinvertido las ganancias y hemos ganado más dinero.</p>
+</dd>
+</dl>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id1041">
+<div class="iDevice emphasis0" >
+<div id="ta1041_957_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div style="display: flex; align-items: center; flex-wrap: wrap;">
+<figure class="exe-figure exe-image float-left license-custom" style="width: 250px; flex: 0 0 auto; text-align: justify;"><span style="font-size: 12pt;"><img src="Retor_secundaria_contable.png" alt="Rétor dice..." title="Rétor dice..." width="250" height="250"></span></figure>
+<div style="flex: 1;">
+<p style="text-align: justify;"><span style="font-size: 12pt;">Has visto lo útiles que son las progresiones aritméticas para el cálculo del interés simple.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Pero esto no es suficiente, vas a estudiar ahora cómo el calculo de los intereses puede ir un poco más lejos.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Vas a&nbsp; utilizar las progresiones geométricas para aprender a manejar el interés compuesto.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Este cálculo será esencial para culminar con éxito el reto que te planteamos.</span></p>
+</div>
+</div></div><article class="exe-udlContent-content-simplified js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Lectura facilitada</h2></header><p><span style="font-size: 14pt;">Has visto lo útiles que son las progresiones aritméticas&nbsp;</span></p>
+<p><span style="font-size: 14pt;">para el cálculo del interés simple.</span></p>
+<p><span style="font-size: 14pt;">Pero esto no es suficiente, ahora vas a estudiar&nbsp;</span></p>
+<p><span style="font-size: 14pt;">cómo el cálculo de los intereses&nbsp;</span></p>
+<p><span style="font-size: 14pt;">puede ir un poco más lejos.</span></p>
+<p><span style="font-size: 14pt;">Vas a&nbsp;utilizar las progresiones geométricas&nbsp;</span></p>
+<p><span style="font-size: 14pt;">para aprender a manejar el interés compuesto.</span></p>
+<p><span style="font-size: 14pt;">Este cálculo será esencial&nbsp;</span></p>
+<p><span style="font-size: 14pt;">para culminar con éxito el reto que te planteamos.</span></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_rep_lee" id="id1043">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_rep_lee.svg)"><h1 class="iDeviceTitle">1. Interés compuesto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1043_117_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><figure class="exe-figure exe-image license-pd position-center" style="width: 599px;"><img src="IMG_1131.PNG" width="451" height="319"></figure>
+<p style="text-align: justify;">En el estudio del interés simple, hemos visto como los beneficios que se van obteniendo cada año, no se <a href="#te1bf8feb-4ee5-d357-bb0c-dfcb074da880" id="linke1bf8feb-4ee5-d357-bb0c-dfcb074da880" class="exe-tooltip definition-tt titled-tt" title="Reinvertir | Reinvertir">reinvierten</a>.</p>
+<p style="text-align: justify;">¿Qué crees que ocurriría si al final de cada año, los beneficios obtenido se suma al <a href="#t870635cb-334a-191a-b598-0d2772fea3ca" id="link870635cb-334a-191a-b598-0d2772fea3ca" class="exe-tooltip definition-tt titled-tt" title="Capital | Capital">capital</a> y de este modo se reinvierte? Vamos a verlo.</p>
+<div class="exe-fx exe-carousel">
+<h2>Recuerda la situación</h2>
+<ul>
+<li>Tienes un capital inicial, $C_i=8000 €$.</li>
+<li>Lo vas a invertir durante $5$ años. $t=5$ años.</li>
+<li>La inversión es con un rédito del $5$ %, $r=5$.</li>
+</ul>
+<h2>1º Año</h2>
+<p>El interés generado es el mismo que en el caso del interés simple: $i=0,05·8000=400$, luego el capital final después del 1º año es: $C_f=8000+400=8400 €$.</p>
+<h2>2º Año</h2>
+<p>La diferencia viene ahora, para el 2º año, el capital inicial no es de $8000 €$, si no de $8400 €$.&nbsp;Por tanto el interés generado al final del 2º año es: $8400·0,05= 420 €$</p>
+<p>El capital final después de ese 2º año sería: $C_f=8000·(1+0,05)^2=8400+420=8820 €$.</p>
+<h2>3º Año</h2>
+<p>Puedes comprobar que el interés generado durante el 3º año sería: $8820 ·0,05=441 €$.</p>
+<p>Por lo que el capital final en el 3º año es: $C_f=8000·(1+0,05)^3=9261 €$</p>
+<p>Lo que está ocurriendo es que el capital final aumenta según una progresión geométrica en la que el primer término es $8000$ y la razón es $(1+0,05)$.</p>
+<p>Se podría escribir que para el 3º año, el capital final es: $C_f=C_i·(1+0,05)^3$.</p>
+<h2>4º Año</h2>
+<p>El capital final es:&nbsp;$C_f=C_i·(1+0,05)^4=8000·(1+0,05)^4=9724,05 €$</p>
+<h2>&nbsp;5º Año</h2>
+<p>El capital final es:&nbsp;$C_f=C_i·(1+0,05)^5=8000·(1+0,05)^5=10210,26 €$</p>
+</div>
+<div id="te1bf8feb-4ee5-d357-bb0c-dfcb074da880" class="exe-tooltip-text">
+<p><img src="reinvertir.png" alt="Reinvertir" title="Reinvertir" style="float: left; margin-right: 10px; margin-left: 10px;" width="100" height="100"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Aplicar los beneficios de una actividad productiva al aumento de su capital (dinero).</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>Hemos reinvertido las ganancias y hemos ganado más dinero.</p>
+</dd>
+</dl>
+</div>
+<div id="t870635cb-334a-191a-b598-0d2772fea3ca" class="exe-tooltip-text">
+<p><img src="capital.png" alt="Capital" title="Capital" style="float: left; margin-right: 10px; margin-left: 10px;" width="100" height="100"></p>
+<dl style="overflow: hidden;">
+<dt><strong>Definición</strong></dt>
+<dd>
+<p>Recursos y bienes.</p>
+</dd>
+<dt><strong>Ejemplo</strong></dt>
+<dd>
+<p>El capital de la familia crece.</p>
+</dd>
+</dl>
+</div></div></div></section><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En general, la expresión para calcular el capital final de una determinada cantidad inicial $C_i$, sujeta aun interés compuesto de rédito $r$, durante un tiempo $t$ años, es:</p>
+<p style="text-align: center;">$C_f=C_i·(1+\dfrac{r}{100})^t$</p>
+<p>Si el tiempo va expresado en meses, la expresión sería:&nbsp;</p>
+<p>$C_f=C_i·(1+\dfrac{r}{12·100})^{12·t}$</p>
+<p>También se podría plantear capitalizar los intereses de forma trimestral, luego, como un año tiene 4 trimestres:&nbsp;</p>
+<p>$C_f=C_i·(1+\dfrac{r}{4·100})^{4·t}$</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_ejercicio" id="id1044">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_ejercicio.svg)"><h1 class="iDeviceTitle">2. Practicamos el interés compuesto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1044_117_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div style="display: flex; align-items: center; flex-wrap: wrap;">
+<figure class="exe-figure exe-image float-left license-custom" style="width: 125px; flex: 0 0 auto; text-align: justify;"><span style="font-size: 12pt;"><img src="Retor_secundaria_contable.png" alt="Rétor dice..." title="Rétor dice..." width="125" height="125" style="float: left; margin: 10px;"></span></figure>
+<div style="flex: 1;">
+<p style="text-align: justify;"><span style="font-size: 12pt;">&nbsp;En las siguientes actividades vas poner en practica lo que has aprendido sobre interés compuesto.</span></p>
+<p><span style="font-size: 12pt;">Te permitirá saber si esa reinversión te produce suficientes beneficios.</span></p>
+<p><span style="font-size: 12pt;">¡A por ello!</span></p>
+</div>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_exp_interactivo" id="id1045">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_interactivo.svg)"><h1 class="iDeviceTitle">Opción A: Ahorrando</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1045_1033_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><iframe width="958" height="363" src="https://blogsaverroes.juntadeandalucia.es/ejerciciosrea/wp-admin/admin-ajax.php?action=h5p_embed&amp;id=2567" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<script src="https://blogsaverroes.juntadeandalucia.es/ejerciciosrea/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+</p></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper ClozeIdevice em_iDevice em_iDevice_question" id="id1047">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Opción B:  Valorando opciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta1047_116" class="block instructions iDevice_content">
+<p>Completa la siguiente tabla aplicando un interés compuesto</p>
+<p>IMPORTANTE: Introduce el resultado redondeando al número entero más cercano.</p>
+</section>
+
+    <section class="activity" id="activity-1047_117"><form name="cloze-form-1047_117" action="#" class="activity-form cloze-activity-form"><div id="cloze1047_117"><input type="hidden" name="clozeFlag1047_117.strictMarking" id="clozeFlag1047_117.strictMarking" value="false"/>
+<input type="hidden" name="clozeFlag1047_117.checkCaps" id="clozeFlag1047_117.checkCaps" value="false"/>
+<input type="hidden" name="clozeFlag1047_117.instantMarking" id="clozeFlag1047_117.instantMarking" value="false"/>
+<table border="1" style="width: 100%; height: 90px;">
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 25%; height: 18px; text-align: center;">Capital</td>
+<td style="width: 25%; height: 18px; text-align: center;">Rédito</td>
+<td style="width: 25%; height: 18px; text-align: center;">Años</td>
+<td style="width: 25%; height: 18px; text-align: center;">Capital final</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 25%; height: 18px; text-align: center;">4000 €</td>
+<td style="width: 25%; height: 18px; text-align: center;">2 %</td>
+<td style="width: 25%; height: 18px; text-align: center;">  <label for="clozeBlank1047_117.0" class="sr-av">Rellenar huecos (1):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank1047_117.0" style="width:1ch" /><span style="display:none" id="clozeAnswer1047_117.0">JXUwMDZk
+</span>  </td>
+<td style="width: 25%; height: 18px; text-align: center;">4416 €</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 25%; height: 18px; text-align: center;">30000 €</td>
+<td style="width: 25%; height: 18px; text-align: center;">0,5 %</td>
+<td style="width: 25%; height: 18px; text-align: center;">  <label for="clozeBlank1047_117.1" class="sr-av">Rellenar huecos (2):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank1047_117.1" style="width:2ch" /><span style="display:none" id="clozeAnswer1047_117.1">JXUwMDY5JXUwMDAx
+</span>  </td>
+<td style="width: 25%; height: 18px; text-align: center;">31534 €</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 25%; height: 18px; text-align: center;">10000 €</td>
+<td style="width: 25%; height: 18px; text-align: center;">  <label for="clozeBlank1047_117.2" class="sr-av">Rellenar huecos (3):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank1047_117.2" style="width:1ch" /><span style="display:none" id="clozeAnswer1047_117.2">JXUwMDZk
+</span>   %</td>
+<td style="width: 25%; height: 18px; text-align: center;">15</td>
+<td style="width: 25%; height: 18px; text-align: center;">20789 €</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 25%; height: 18px; text-align: center;">  <label for="clozeBlank1047_117.3" class="sr-av">Rellenar huecos (4):</label><input class="autocomplete-off" type="text" value="" id="clozeBlank1047_117.3" style="width:6ch" /><span style="display:none" id="clozeAnswer1047_117.3">JXUwMDY5JXUwMDAzJXUwMDAyJXUwMDAwJXUwMDAwJXUwMDAw
+</span>   €</td>
+<td style="width: 25%; height: 18px; text-align: center;">3 %</td>
+<td style="width: 25%; height: 18px; text-align: center;">20</td>
+<td style="width: 25%; height: 18px; text-align: center;">216733 €</td>
+</tr>
+</tbody>
+</table><div class="block iDevice_buttons"><p><input class="button" type="submit" name="submit1047_117" value="Enviar"  id="submit1047_117" />
+<input type="button" name="restart1047_117" value="Reiniciar" style="display:none" id="restart1047_117" onclick="$exe.cloze.restart('1047_117')" />
+ <input type="button" name="1047_117showAnswersButton" value="Mostrar las respuestas" style="display:none" id="showAnswersButton1047_117" onclick="$exe.cloze.fillInputs('1047_117')" />
+<span class="js-hidden js-warning">Habilitar JavaScript</span></p></div><div id="clozeScore1047_117"></div></div></form></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id849">
+<div class="iDevice emphasis0" >
+<div id="ta849_1133_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2><span class="sr-av">Motus dice </span>Reflexiona</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><span style="font-size: 12pt;">¿Cuántas veces te has distraído al hacer la actividad?</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Seguro que cuando estabas haciendo esta actividad ha ocurrido algo que te ha hecho parar. Puede que alguien pegase a la puerta, que el profe haya hablado con alguien, que hayas oído un ruido en la calle, que te hayas acordado de algo que hiciste ayer…</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Cuando aprendemos estamos rodeados de cosas que nos pueden distraer. Al volver a la actividad te cuesta más trabajo centrarte.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Por eso es importante que aprendas a controlar tus distracciones. Te doy algunos consejos:</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="font-size: 12pt;">- Concéntrate bien en la actividad que tienes que realizar.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="font-size: 12pt;">- Si tiene muchos pasos o es muy difícil, haz descansos cortos para descansar.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="font-size: 12pt;">- Si te molesta lo que hay a tu alrededor trata de ver si puedes reducirlo: cierra las ventanas, pide silencio.</span></p>
+<p style="text-align: justify; padding-left: 30px;"><span style="font-size: 12pt;">- Piensa que si te distraes tardarás más tiempo en terminar.</span></p></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id1042">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">PARA SABER MÁS</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1042_112_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2>¿Recuerdas las progresiones geométricas?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-tabs">
+<h2>Definición</h2>
+<p>Ya eres un experto en sucesiones.</p>
+<p>Así que vamos a intentar ampliar tus conocimientos.</p>
+<p>Observa la siguiente secuencia de números:</p>
+<p>&nbsp;&nbsp;\( 3,9,27,81,243,.......\)&nbsp;&nbsp;</p>
+<p>Ya sabes que los términos de las sucesiones los nombramos de la siguiente manera:&nbsp;\(&nbsp;a_{1}=3 \),&nbsp;\(&nbsp;a_{2}=9 \), \(&nbsp;a_{3}=27 \), \(&nbsp;a_{4}=81 \), \(a_{5}=243 \).....&nbsp; &nbsp; &nbsp;</p>
+<p>¿Sabrías calcular \(&nbsp;a_{7}\)?</p>
+<p>&nbsp;Observa que cada término se obtiene del anterior multiplicando por tres.</p>
+<p>Esto dicho de otra manera, es: si dividimos un término concreto entre el inmediatamente anterior, obtenemos tres.</p>
+<p>\( \dfrac{a_{2}}{a_{1}}=\dfrac{9}{3}=3 ; \dfrac{a_{3}}{a_{2}}=\dfrac{27}{9}=3 ; \dfrac{a_{4}}{a_{3}}=\dfrac{81}{27}=3 ;\dfrac{a_{5}}{a_{4}}=\dfrac{243}{81}=3 \)</p>
+<p>Una sucesión cuyos términos se obtienen multiplicando por una cantidad fija r, se llama Progresión Geométrica de <strong>razón r</strong>.</p>
+<p><br>En nuestro ejemplo, tendríamos una progresión geométrica de&nbsp; razón 3.</p>
+<p><br>Como puedes observar, los términos de una progresión geométrica son infinitos.</p>
+<p><img src="Esquema_Piramidal.svg.png" alt="Esquema piramidal" title="Esquema piramidal" width="380" height="250" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2 style="text-align: justify;">Término General de una Progresión Geométrica</h2>
+<p style="text-align: justify;">Partiendo del primer término de una progresión geométrica a1, y conociendo la razón, podemos obtener los siguientes términos.</p>
+<p style="text-align: justify;">\(&nbsp;a_{1}= a_{1}\)</p>
+<p style="text-align: justify;">\(&nbsp;a_{2}= a_{1}·r\)</p>
+<p style="text-align: justify;">\(&nbsp;a_{3}= a_{2}·r=a_{1}·r^2\)</p>
+<p style="text-align: justify;">Si generalizamos esta secuencia, obtenemos:&nbsp;\(&nbsp;a_{n}= a_{1}·r^{n-1}\)</p>
+<p style="text-align: justify;">A esta expresión le llamamos término general de la progresión, ya que conociendo el primer término y la razón, podemos obtener cualquier otro.</p>
+<h2>Cálculo de un término a partir del término general</h2>
+<p style="text-align: justify;">Vamos a aplicar el término general que acabamos de aprender para calcular términos de la progresión.</p>
+<p>\(\rightarrow \)&nbsp;Calcular el quinto término de una progresión geométrica de&nbsp;\( r=-2\)&nbsp; y&nbsp;\(a_{1}=5\)</p>
+<p>El término general sería:&nbsp;\(a_{n}=5·(-2)^{n-1}\) , luego el quinto término:&nbsp;\(a_{5}=5·(-2)^{5-1}=5·(-2)^4=5·16=80\)</p>
+<p>\(\rightarrow \) Calcular el primer término de una progresión geométrica de razón 4, cuyo cuarto término es 128.</p>
+<p>El término general de esta progresión sería: \(a_{n}=a_{1}·4^{n-1}\) , luego el cuarto término:&nbsp;</p>
+<p>\(a_{4}=a_{1}·4^{4-1}=a_{1}·4^3\)</p>
+<p>Se indica que el cuarto término es igual a 128, luego:&nbsp;\(a_{4}=a_{1}·4^3=128\) \(\rightarrow \)&nbsp;\(a_{1}·64=128\)</p>
+<p>&nbsp;expresión de la que se puede calcular el primer término: \( \dfrac{128}{64}=2\)</p>
+<p>La progresión tendría el siguiente término general:&nbsp;\(a_{n}=2·4^{n-1}\)</p>
+<p style="text-align: justify;">\(\rightarrow \) La razón de una progresión geométrica también puede ser una fracción. Estudia el siguiente ejemplo:</p>
+<p>Calcula el quinto término de una progresión geométrica de razón \( r=\dfrac{1}{2}\)&nbsp; y&nbsp;\(a_{1}=32\)</p>
+<p>El término general de esta progresión sería:&nbsp;\(a_{n}=32·\left( \dfrac{1}{2} \right)^{n-1}\)</p>
+<p>El quinto término lo podemos calcular de la siguiente manera:&nbsp;</p>
+<p>\(a_{5}=32·\left( \dfrac{1}{2} \right)^{5-1}=32·\left( \dfrac{1}{2} \right)^4=32·\dfrac{1}{2^4}=32·32·\dfrac{32}{16}=2\)</p>
+<h2>Suma de n términos</h2>
+<p style="text-align: justify;">En determinadas situaciones, puede resultarnos útil conocer la suma de los primeros términos de una progresión geométrica, por ejemplo los 10 primeros términos, o los 6 primeros términos.&nbsp;</p>
+<p>La expresión matemática para realizar este cálculo es:&nbsp; &nbsp;\(S_{n}=\dfrac{a_{1}·r^n-a_{1}}{r-1}\)&nbsp;</p>
+</div>
+<pre><span style="font-size: 14pt;"><code><span style="font-size: 12pt;"></span></code><strong><code><br><br><br></code></strong></span></pre>
+<p><br><br><br></p>
+<p>...</p></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><div class="exe-fx exe-tabs">
+<h2>Definición</h2>
+<p>Ya eres un experto en sucesiones.</p>
+<p>Así que vamos a intentar ampliar tus conocimientos.</p>
+<p>Observa la siguiente secuencia de números:</p>
+<p>  \( 3,9,27,81,243,.......\)  </p>
+<p>Ya sabes que los términos de las sucesiones los nombramos de la siguiente manera: \( a_{1}=3 \), \( a_{2}=9 \), \( a_{3}=27 \), \( a_{4}=81 \), \(a_{5}=243 \).....     </p>
+<p>¿Sabrías calcular \( a_{7}\)?</p>
+<p> Observa que cada término se obtiene del anterior multiplicando por tres.</p>
+<p>Esto dicho de otra manera, es: si dividimos un término concreto entre el inmediatamente anterior, obtenemos tres.</p>
+<p>\( \dfrac{a_{2}}{a_{1}}=\dfrac{9}{3}=3 ; \dfrac{a_{3}}{a_{2}}=\dfrac{27}{9}=3 ; \dfrac{a_{4}}{a_{3}}=\dfrac{81}{27}=3 ;\dfrac{a_{5}}{a_{4}}=\dfrac{243}{81}=3 \)</p>
+<p>Una sucesión cuyos términos se obtienen multiplicando por una cantidad fija r, se llama Progresión Geométrica de <strong>razón r</strong>.</p>
+<p><br>En nuestro ejemplo, tendríamos una progresión geométrica de  razón 3.</p>
+<p><br>Como puedes observar, los términos de una progresión geométrica son infinitos.</p>
+<p><img src="Esquema_Piramidal.svg.png" alt="Esquema piramidal" title="Esquema piramidal" width="380" height="250" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<h2 style="text-align: justify;">Término General de una Progresión Geométrica</h2>
+<p style="text-align: justify;">Partiendo del primer término de una progresión geométrica a1, y conociendo la razón, podemos obtener los siguientes términos.</p>
+<p style="text-align: justify;">\( a_{1}= a_{1}\)</p>
+<p style="text-align: justify;">\( a_{2}= a_{1}·r\)</p>
+<p style="text-align: justify;">\( a_{3}= a_{2}·r=a_{1}·r^2\)</p>
+<p style="text-align: justify;">Si generalizamos esta secuencia, obtenemos: \( a_{n}= a_{1}·r^{n-1}\)</p>
+<p style="text-align: justify;">A esta expresión le llamamos término general de la progresión, ya que conociendo el primer término y la razón, podemos obtener cualquier otro.</p>
+<h2>Cálculo de un término a partir del término general</h2>
+<p style="text-align: justify;">Vamos a aplicar el término general que acabamos de aprender para calcular términos de la progresión.</p>
+<p>\(\rightarrow \) Calcular el quinto término de una progresión geométrica de \( r=-2\)  y \(a_{1}=5\)</p>
+<p>El término general sería: \(a_{n}=5·(-2)^{n-1}\) , luego el quinto término: \(a_{5}=5·(-2)^{5-1}=5·(-2)^4=5·16=80\)</p>
+<p>\(\rightarrow \) Calcular el primer término de una progresión geométrica de razón 4, cuyo cuarto término es 128.</p>
+<p>El término general de esta progresión sería: \(a_{n}=a_{1}·4^{n-1}\) , luego el cuarto término: </p>
+<p>\(a_{4}=a_{1}·4^{4-1}=a_{1}·4^3\)</p>
+<p>Se indica que el cuarto término es igual a 128, luego: \(a_{4}=a_{1}·4^3=128\) \(\rightarrow \) \(a_{1}·64=128\)</p>
+<p> expresión de la que se puede calcular el primer término: \( \dfrac{128}{64}=2\)</p>
+<p>La progresión tendría el siguiente término general: \(a_{n}=2·4^{n-1}\)</p>
+<p style="text-align: justify;">\(\rightarrow \) La razón de una progresión geométrica también puede ser una fracción. Estudia el siguiente ejemplo:</p>
+<p>Calcula el quinto término de una progresión geométrica de razón \( r=\dfrac{1}{2}\)  y \(a_{1}=32\)</p>
+<p>El término general de esta progresión sería: \(a_{n}=32·\left( \dfrac{1}{2} \right)^{n-1}\)</p>
+<p>El quinto término lo podemos calcular de la siguiente manera: </p>
+<p>\(a_{5}=32·\left( \dfrac{1}{2} \right)^{5-1}=32·\left( \dfrac{1}{2} \right)^4=32·\dfrac{1}{2^4}=32·32·\dfrac{32}{16}=2\)</p>
+<h2>Suma de n términos</h2>
+<p style="text-align: justify;">En determinadas situaciones, puede resultarnos útil conocer la suma de los primeros términos de una progresión geométrica, por ejemplo los 10 primeros términos, o los 6 primeros términos. </p>
+<p>La expresión matemática para realizar este cálculo es:   \(S_{n}=\dfrac{a_{1}·r^n-a_{1}}{r-1}\) </p>
+</div>
+<pre><span style="font-size: 14pt;"><code><span style="font-size: 12pt;">Consulta esta página web si quieres realizar ejercicios de progresiones geométricas:</span></code><strong><code><br><br>https://www.superprof.es/apuntes/escolar/matematicas/aritmetica/sucesiones/ejercicios-progresiones-geometricas.html</code></strong></span></pre>
+<p><br><br><br></p>
+<p>...</p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_udl_exp_interactivo" id="id856">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_exp_interactivo.svg)"><h1 class="iDeviceTitle">ACTIVIDAD DE AMPLIACIÓN: Practica las progresiones geométricas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta856_1126_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="background-color: #ffff00;">Consulta esta página web si quieres realizar ejercicios de progresiones geométricas:</span></p>
+<pre><code><strong><span style="font-size: 14pt;">https://www.superprof.es/apuntes/escolar/matematicas/aritmetica/sucesiones/ejercicios-progresiones-geometricas.html</span></strong></code></pre>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-nc-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Reconocimiento No comercial Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="41_inters_simple.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>7</strong> de <strong>11</strong></span> <span class="sep">| </span><a href="43_necesito_pasta.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>
